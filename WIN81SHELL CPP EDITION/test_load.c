@@ -1,0 +1,1 @@
+#include <windows.h> #include <stdlib.h> int APIENTRY WinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPSTR lpCmdLine, int nCmdShow) { HMODULE h = LoadLibrary(TEXT(" loader.dll\)); if (h) { MessageBox(NULL, TEXT(\DLL loaded\), TEXT(\Test\), 0); FreeLibrary(h); } return 0; }
